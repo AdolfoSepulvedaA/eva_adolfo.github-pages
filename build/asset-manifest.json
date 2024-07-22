@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Eva-4.github-pages/build/static/css/main.34b60dcc.css",
+    "main.js": "/Eva-4.github-pages/build/static/js/main.3b1e9e63.js",
+    "static/js/453.ed3810f9.chunk.js": "/Eva-4.github-pages/build/static/js/453.ed3810f9.chunk.js",
+    "static/media/portada 3.jpg": "/Eva-4.github-pages/build/static/media/portada 3.816c4bbeefab7f4adad1.jpg",
+    "static/media/portada 5.jpg": "/Eva-4.github-pages/build/static/media/portada 5.5b498ad7d34afaa681a7.jpg",
+    "static/media/portada 1.jpg": "/Eva-4.github-pages/build/static/media/portada 1.d2253679bcfb8f211534.jpg",
+    "static/media/portada 2.jpg": "/Eva-4.github-pages/build/static/media/portada 2.a3992d883881cedbf7fa.jpg",
+    "static/media/Logo.png": "/Eva-4.github-pages/build/static/media/Logo.025473042c3f166f1958.png",
+    "static/media/portada 4.jpg": "/Eva-4.github-pages/build/static/media/portada 4.75f14febc71723403a08.jpg",
+    "index.html": "/Eva-4.github-pages/build/index.html",
+    "main.34b60dcc.css.map": "/Eva-4.github-pages/build/static/css/main.34b60dcc.css.map",
+    "main.3b1e9e63.js.map": "/Eva-4.github-pages/build/static/js/main.3b1e9e63.js.map",
+    "453.ed3810f9.chunk.js.map": "/Eva-4.github-pages/build/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.34b60dcc.css",
+    "static/js/main.3b1e9e63.js"
+  ]
+}

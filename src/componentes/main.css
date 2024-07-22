@@ -1,0 +1,20 @@
+/* main.css */
+main {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en una columna */
+  }
+  
+  .home-section {
+    display: flex;
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row; /* Organiza las secciones de contenido en una fila */
+    gap: 20px; /* Espacio entre las secciones de contenido */
+  }
+  
+  .content-section {
+    flex: 1; /* Las secciones se expanden para llenar el contenedor */
+  }
+  

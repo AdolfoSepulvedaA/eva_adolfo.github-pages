@@ -11,7 +11,7 @@ function QuienesSomos() {
         confección de letras, coach, y cantante. Fumador de flores funcionaba como beatmaker y cantante, pero decide abandonar
         por motivos personales. Con la salida de Fumador de flores se produce una vacante que fue rápidamente ocupada por Haiko
         quien es un talentoso beatmaker y cantante. Actualmente buscamos talento que quiera sumarse a nuestras filas.
-        </p>p
+        </p>
     </div>
   );
 }

@@ -4,6 +4,8 @@ import logo from './img/Logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Navbar() {
+  const isLoggedIn = !!localStorage.getItem('currentUser');
+
   return (
     <nav className="navbar navbar-expand-lg bg-black">
       <div className="container-fluid">
@@ -19,23 +21,31 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link active" aria-current="page" to="/">Home</Link>
             </li>
+            {!isLoggedIn && (
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/registro">Registro</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/login">Login</Link>
+                </li>
+              </>
+            )}
+            {isLoggedIn && (
+              <>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/perfil">Perfil</Link>
+                </li>
+              </>
+            )}
             <li className="nav-item">
-              <Link className="nav-link" to="/registro" id="registroLink">Registro</Link>
+              <Link className="nav-link" to="/quienessomos">Quienes somos</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/login" id="loginLink">Login</Link>
+              <Link className="nav-link" to="/artistas">Artistas</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/perfil" id="perfilLink" style={{ display: 'none' }}>Perfil</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/quienes-somos" id="quienesSomosLink">Quienes somos</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/artistas" id="artistasLink">Artistas</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/ranking" id="rankingLink">Ranking</Link>
+              <Link className="nav-link" to="/ranking">Ranking</Link>
             </li>
           </ul>
         </div>

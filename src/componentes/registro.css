@@ -1,0 +1,31 @@
+.ranking-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.ranking-table th, .ranking-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ranking-table th {
+  background-color: #f4f4f4;
+}
+
+.ranking-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.ranking-table select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

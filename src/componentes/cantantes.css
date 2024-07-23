@@ -1,45 +1,53 @@
 /* src/componentes/cantantes.css */
 #cantantes {
   padding: 20px;
-  background-color: #f8f9fa; /* Color de fondo para la sección */
+  background-color: #000; /* Fondo negro para la sección */
+  color: #fff; /* Texto blanco para contraste */
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
+  background-color: #333; /* Fondo oscuro para la tabla */
+  border-radius: 8px; /* Bordes redondeados para la tabla */
+  overflow: hidden; /* Asegura que los bordes redondeados se mantengan */
 }
 
 th, td {
-  padding: 12px;
+  padding: 16px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #555; /* Línea de separación más tenue */
 }
 
 th {
-  background-color: #f4f4f4;
+  background-color: #444; /* Color de fondo para los encabezados */
+  color: #fff; /* Texto blanco para los encabezados */
 }
 
 tr:hover {
-  background-color: #f1f1f1;
+  background-color: #555; /* Color de fondo al pasar el ratón sobre las filas */
 }
 
 .artista img {
-  width: 100px; /* Ajusta el tamaño de la imagen si es necesario */
+  width: 150px; /* Tamaño más grande para las imágenes */
   height: auto;
   border-radius: 8px;
+  border: 2px solid #444; /* Borde sutil alrededor de la imagen */
 }
 
 .descripcion h1, .descripcion h2 {
   margin: 0;
+  color: #fff; /* Texto blanco para mejor contraste */
 }
 
 .descripcion h3 {
   margin: 5px 0;
+  color: #ccc; /* Texto gris claro para las subcategorías */
 }
 
 .redes a {
-  color: #007bff;
+  color: #1e90ff; /* Color azul para los enlaces */
   text-decoration: none;
 }
 

@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import './ranking.css'; // Asegúrate de crear este archivo CSS
+import './ranking.css'; // Asegúrate de tener este archivo CSS
 
-function Ranking() {
-  const [users, setUsers] = useState([]);
+// Hook personalizado para manejar emoticonos
+const useEmoticons = () => {
   const [emoticons, setEmoticons] = useState({});
 
   useEffect(() => {
-    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
-    storedUsers.sort((a, b) => new Date(b.fechaRegistro) - new Date(a.fechaRegistro)); // Ordena por fecha de registro descendente
-    setUsers(storedUsers);
-    
     // Cargar emoticonos del localStorage o inicializar vacío
     setEmoticons(JSON.parse(localStorage.getItem('userEmoticons')) || {});
   }, []);
@@ -21,6 +17,41 @@ function Ranking() {
       localStorage.setItem('userEmoticons', JSON.stringify(updatedEmoticons));
     }
   };
+
+  return { emoticons, handleEmoticonChange };
+};
+
+// Componente para una fila de la tabla
+const RankingRow = ({ user, index, emoticons, onEmoticonChange }) => (
+  <tr>
+    <td>{index + 1}</td>
+    <td>{user.nombre}</td>
+    <td>{user.apellidos}</td>
+    <td>{user.fechaRegistro}</td>
+    <td>{emoticons[user.email] || 'Ninguno'}</td>
+    <td>
+      <select
+        value={emoticons[user.email] || ''}
+        onChange={(e) => onEmoticonChange(user.email, e.target.value)}
+      >
+        <option value="">Seleccionar emoticono</option>
+        <option value="👍">Like 👍</option>
+        <option value="❤️">Corazón ❤️</option>
+        <option value="👎">Deslike 👎</option>
+      </select>
+    </td>
+  </tr>
+);
+
+const Ranking = () => {
+  const [users, setUsers] = useState([]);
+  const { emoticons, handleEmoticonChange } = useEmoticons();
+
+  useEffect(() => {
+    const storedUsers = JSON.parse(localStorage.getItem('users')) || [];
+    storedUsers.sort((a, b) => new Date(b.fechaRegistro) - new Date(a.fechaRegistro)); // Ordena por fecha de registro descendente
+    setUsers(storedUsers);
+  }, []);
 
   return (
     <div className="ranking-container">
@@ -38,24 +69,13 @@ function Ranking() {
         </thead>
         <tbody>
           {users.map((user, index) => (
-            <tr key={index}>
-              <td>{index + 1}</td>
-              <td>{user.nombre}</td>
-              <td>{user.apellidos}</td>
-              <td>{user.fechaRegistro}</td>
-              <td>{emoticons[user.email] || 'Ninguno'}</td>
-              <td>
-                <select
-                  value={emoticons[user.email] || ''}
-                  onChange={(e) => handleEmoticonChange(user.email, e.target.value)}
-                >
-                  <option value="">Seleccionar emoticono</option>
-                  <option value="👍">Like 👍</option>
-                  <option value="❤️">Corazón ❤️</option>
-                  <option value="👎">Deslike 👎</option>
-                </select>
-              </td>
-            </tr>
+            <RankingRow
+              key={index}
+              user={user}
+              index={index}
+              emoticons={emoticons}
+              onEmoticonChange={handleEmoticonChange}
+            />
           ))}
         </tbody>
       </table>

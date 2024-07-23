@@ -1,32 +1,40 @@
 .ranking-container {
-    padding: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  .ranking-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  .ranking-table th, .ranking-table td {
-    padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .ranking-table th {
-    background-color: #f4f4f4;
-  }
-  
-  .ranking-table tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .ranking-table select {
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
+  padding: 20px;
+  max-width: 1200px; /* Aumenta el ancho máximo para mejor visualización */
+  margin: 0 auto;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff; /* Fondo blanco para la tabla */
+  border-radius: 8px; /* Bordes redondeados para la tabla */
+  overflow: hidden; /* Para asegurar que los bordes redondeados se apliquen */
+}
+
+.ranking-table th, .ranking-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ranking-table th {
+  background-color: #343a40; /* Color de fondo oscuro para los encabezados */
+  color: #ffffff; /* Texto blanco para los encabezados */
+}
+
+.ranking-table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Fondo alterno para filas pares */
+}
+
+.ranking-table tr:hover {
+  background-color: #e9ecef; /* Color de fondo al pasar el ratón */
+}
+
+.ranking-table select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff; /* Fondo blanco para el selector */
+}

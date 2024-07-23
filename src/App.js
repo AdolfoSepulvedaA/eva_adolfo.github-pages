@@ -1,3 +1,4 @@
+// src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -10,6 +11,7 @@ import Ranking from './componentes/ranking';
 import Login from './componentes/login';
 import Perfil from './componentes/perfil';
 import QuienesSomos from './componentes/quienessomos';
+import Cantantes from './componentes/cantantes';
 import './App.css';
 
 function App() {
@@ -21,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/registro" element={<Registro />} />
+          <Route path="/cantantes" element={<Cantantes />} />
           <Route path="/ranking" element={<Ranking />} />
           <Route path="/login" element={<Login />} />
           <Route path="/perfil" element={<ProtectedRoute component={Perfil} />} />

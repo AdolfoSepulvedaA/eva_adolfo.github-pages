@@ -1,3 +1,4 @@
+// src/componentes/navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from './img/Logo.png';
@@ -42,7 +43,7 @@ function Navbar() {
               <Link className="nav-link" to="/quienessomos">Quienes somos</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/artistas">Artistas</Link>
+              <Link className="nav-link" to="/cantantes">Artistas</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/ranking">Ranking</Link>

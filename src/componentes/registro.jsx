@@ -92,7 +92,7 @@ function Registro() {
           <label htmlFor="password">Contraseña:</label>
           <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} required />
         </div>
-        <div className="form-group">
+        <div className="form-group checkbox-group">
           <input type="checkbox" id="isAdult" name="isAdult" checked={formData.isAdult} onChange={handleChange} />
           <label htmlFor="isAdult">Soy mayor de 18 años</label>
         </div>

@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/eva_adolfo.github-pages/build/static/css/main.34b60dcc.css",
-    "main.js": "/eva_adolfo.github-pages/build/static/js/main.60eaaacd.js",
-    "static/js/453.3950e10f.chunk.js": "/eva_adolfo.github-pages/build/static/js/453.3950e10f.chunk.js",
+    "main.css": "/eva_adolfo.github-pages/build/static/css/main.bc0c86e9.css",
+    "main.js": "/eva_adolfo.github-pages/build/static/js/main.c910bf12.js",
     "static/media/portada 3.jpg": "/eva_adolfo.github-pages/build/static/media/portada 3.816c4bbeefab7f4adad1.jpg",
     "static/media/portada 5.jpg": "/eva_adolfo.github-pages/build/static/media/portada 5.5b498ad7d34afaa681a7.jpg",
     "static/media/portada 1.jpg": "/eva_adolfo.github-pages/build/static/media/portada 1.d2253679bcfb8f211534.jpg",
@@ -10,12 +9,11 @@
     "static/media/Logo.png": "/eva_adolfo.github-pages/build/static/media/Logo.025473042c3f166f1958.png",
     "static/media/portada 4.jpg": "/eva_adolfo.github-pages/build/static/media/portada 4.75f14febc71723403a08.jpg",
     "index.html": "/eva_adolfo.github-pages/build/index.html",
-    "main.34b60dcc.css.map": "/eva_adolfo.github-pages/build/static/css/main.34b60dcc.css.map",
-    "main.60eaaacd.js.map": "/eva_adolfo.github-pages/build/static/js/main.60eaaacd.js.map",
-    "453.3950e10f.chunk.js.map": "/eva_adolfo.github-pages/build/static/js/453.3950e10f.chunk.js.map"
+    "main.bc0c86e9.css.map": "/eva_adolfo.github-pages/build/static/css/main.bc0c86e9.css.map",
+    "main.c910bf12.js.map": "/eva_adolfo.github-pages/build/static/js/main.c910bf12.js.map"
   },
   "entrypoints": [
-    "static/css/main.34b60dcc.css",
-    "static/js/main.60eaaacd.js"
+    "static/css/main.bc0c86e9.css",
+    "static/js/main.c910bf12.js"
   ]
 }
